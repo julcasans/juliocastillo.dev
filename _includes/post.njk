@@ -1,0 +1,35 @@
+{% extends "default.njk" %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+
+  {% if image %}
+    <amp-img src="{{ image }}" alt={{ title }} layout="responsive" width="400" height="180"></amp-img>
+  {% endif %}
+
+  {{ content | safe }}
+
+  <span class="post-date">
+    {{ site.settings.post_date_prefix }}
+    {{ page.date | dateReadable }}
+    by
+    {% if page.author %}
+      {{ page.author }}
+    {% else %}
+      {{ site.author }}
+    {% endif %}
+  </span>
+
+  {% if site.settings.includeSocialSharing %}
+    {% include "social-sharing.njk" %}
+  {% endif %}
+
+  {% if site.settings.includeRelatedPosts %}
+    {% include "related-posts.njk" %}
+  {% endif %}
+
+  {% if site.settings.disqus.comments %}
+    {% include "disqus.njk" %}
+  {% endif %}
+{% endblock %}

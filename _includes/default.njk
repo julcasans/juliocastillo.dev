@@ -1,0 +1,19 @@
+<!doctype html>
+<html ⚡>
+  {% include "head.njk" %}
+  <body>
+
+    <div class="container">
+      {% include "header.njk" %}
+
+      <div class="post-container">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      {% include "footer.njk" %}
+
+    </div>
+
+  </body>
+</html>

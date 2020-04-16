@@ -1,0 +1,13 @@
+{% extends "page.njk" %}
+{% block content %}
+  <ul class="posts">
+    {% for post in collections.post %}
+
+      <li itemscope>
+        <a href="{{ post.data.url }}">{{ post.data.title }}</a>
+        <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.data.date | dateReadable }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include "read-time.njk" %}</span></p>
+      </li>
+
+    {% endfor %}
+  </ul>
+{% endblock %}

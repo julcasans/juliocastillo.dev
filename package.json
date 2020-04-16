@@ -1,0 +1,29 @@
+{
+  "name": "juliocastillo.dev",
+  "version": "1.0.0",
+  "description": "juliocastillo.dev web site",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julcasans/juliocastillo.dev.git"
+  },
+  "keywords": [
+    "blog",
+    "web-dev"
+  ],
+  "author": "Julio E. Castillo Anselmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julcasans/juliocastillo.dev/issues"
+  },
+  "homepage": "https://github.com/julcasans/juliocastillo.dev#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+  }
+}

@@ -1,14 +1,16 @@
 ---
-layout: post
-author: "Julio Castillo Anselmi"
+layout: post.njk
+author: Julio Castillo Anselmi
 categories: LitElement
 
 title: lit-html templates from zero to hero
-published: true
 description: All about writing templates using lit-html. It is the the second post of a series about lit-html and LitElement.
-tags: lit-html, LitElement, webdev, javascript
+tags: ['post', 'lit-html', 'LitElement', 'webdev', 'javascript']
 series: LitElement
-image: hero-lit-html.webp
+
+date: 2019-06-17
+
+image: /assets/img/hero-lit-html.webp
 ---
 
 After a very smooth introduction to `lit-html`, I will go hard and get my hands dirty. I will show you how to write templates so this will be a session full of code!
@@ -299,7 +301,7 @@ html`<ul>${repeat(weekDays, day => day /*id*/, (day, index) => html`<li>${day}</
 
 `lit-html` is distributed as a `npm` package so to install it run the command:
  
-```sh
+```shell
 npm install --save lit-html
 ```
 
@@ -320,7 +322,7 @@ import {html, render} from './node_modules/lit-html/lit-html.js'
 But if you want to use the short syntax you can use a built tool such as Webpack or you can install the Polymer command line tool that can handle the short syntax import when it serves the application. 
 
 With Polymer CLI:
-```sh
+```shell
 ## install it
 npm install -g polymer-cli
 

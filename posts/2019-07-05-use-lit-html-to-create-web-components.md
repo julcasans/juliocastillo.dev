@@ -1,14 +1,16 @@
 ---
-layout: post
-author: "Julio Castillo Anselmi"
+layout: post.njk
+author: Julio Castillo Anselmi
 categories: LitElement
 
 title: Use lit-html to create web components (à la React)
-published: true
 description: Create ultra-fast web components using lit-html and the React approach. It is on my series about lit-html and LitElement.
-tags: lit-html, LitElement, webdev, javascript
+tags: ['post', 'lit-html', 'LitElement', 'webdev', 'javascript']
+
+date: 2019-07-05
+
 series: LitElement
-image: lit-html-web-components.webp
+image: /assets/img/lit-html-web-components.webp
 ---
 
 This post was going to be about directives in `lit-html`, which is the way we can extend the library but I didn't want to keep delaying the arrival to our central theme of the series that is `LitElement`. So I decided to leave the directives for later and enter the doors of `LitElement`. I'm going to show you how to create web components using `lit-html` and we'll see how we get to `LitElement` from there. Let's get started!
@@ -109,12 +111,12 @@ The `update` function invokes the `render` function that will cause the componen
 
 Finally we register the web component:
 
-```javascript
+``` js
 customElements.define('password-checker', PasswordChecker);
 ```
 
 The final code, all together is like this:
-```javascript
+``` js
 import { html, render } from 'lit-html';
 
 class PasswordChecker extends HTMLElement {

@@ -1,18 +1,17 @@
 ---
-layout: post
-author: "Julio Castillo Anselmi"
+layout: post.njk
+author: Julio Castillo Anselmi
 categories: LitElement
 
 title: A gentle introduction to lit-html
-published: true
 description: An overview of the basics concepts of lit-html library It is the first post of a serie about lit-html and LitElement.
-tags: lit-html, LitElement, webdev, javascript
+tags: ['post', 'lit-html', 'LitElement', 'webdev', 'javascript']
 series: LitElement
 
-image:  gentle.webp
+date: 2019-06-04
 
+image: /assets/img/gentle.webp
 ---
-
 
 Hello! I start my blog with a series of `LitElement` entries. I'll start with the most basic concepts and then I'll go deeper into the details of the use of this library. As `LitElement` is based on `lit-html` the first step will be the study of `lit-html`. I hope you like it and find it useful.
 

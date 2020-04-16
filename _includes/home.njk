@@ -1,0 +1,26 @@
+{% extends "default.njk" %}
+{% block content %}
+    {% for post in collections.post %}
+    <article class="posts">
+    <h1>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h1>
+    {% if post.data.image %}
+    <div class="thumbnail-container">
+        <a href="{{ post.url | url }}">
+            <amp-img src={{ post.data.image }} alt={{ post.data.title }} layout="responsive" width="400" height="180"></amp-img>
+        </a>
+    </div>
+    {% endif %}
+    <p>
+        {{ post.data.description }} <a href="{{ post.url }}">Read more</a>
+        <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.data.date | dateReadable }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include "read-time.njk" %}</span>
+    </p>
+    </article>
+    {% endfor %}
+    <main> 
+        {{ content | safe }}
+    </main> 
+{% endblock %}
+
+
