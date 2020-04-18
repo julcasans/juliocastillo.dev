@@ -57,7 +57,7 @@ a:hover {
   border-bottom: none;
 }
 
-amp-img {
+img, amp-img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
@@ -67,7 +67,7 @@ blockquote {
   margin: 10px 20px 10px;
   padding: 0px 15px;
   border-left: 0.25em solid #ccc;
-  color: #999;
+  color: #3367D6;
   line-height: 1.5;
 }
 
@@ -115,7 +115,7 @@ hr {
 }
 
 .masthead-subtitle {
-  color: #999;
+  color: #3367D6;
 }
 
 /*
@@ -127,6 +127,11 @@ hr {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 25px;
+}
+
+.thumbnail-container img{
+  margin-top: -11.5%;
+  margin-bottom: -11.5%;
 }
 
 .thumbnail-container amp-img{
@@ -152,7 +157,7 @@ hr {
   display: block;
   margin-top:3px;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #3367D6;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size:0.8rem;
 }
@@ -191,7 +196,7 @@ hr {
 }
 
 .pagination-button {
-  color: #999;
+  color: #3367D6;
   border: 1px solid #e0e0e0;
   padding: 15px 45px;
   display: inline-block;
@@ -212,13 +217,13 @@ hr {
 */
 
 .footer {
-  color: #999;
+  color: #3367D6;
   text-align: center;
   margin: 2rem;
 }
 
 .footer a {
-  color: #999;
+  color: #3367D6;
   padding: 10px;
   text-decoration: none;
 }
@@ -241,7 +246,7 @@ hr {
 }
 
 .menu-content a {
-  color: #999;
+  color: #3367D6;
   font-size: 1rem;
   padding-right: 10px;
 }
@@ -251,7 +256,7 @@ hr {
 }
 
 .social-icons a {
-  color: #999;
+  color: #3367D6;
   font-size: 1rem;
 }
 
@@ -359,6 +364,48 @@ th, td {
   Social media icons
 */
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+.fa.fnd {
+  font-size: 1.5rem;
+}
+
 .sharing-icons a {
   padding-right: 10px;
 }
@@ -373,7 +420,7 @@ th, td {
 }
 
 .fa-envelope:hover {
-	color: #f39c12;
+  color: #f39c12;
 }
 
 .fa-twitter {

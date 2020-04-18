@@ -1,6 +1,6 @@
 {% extends "default.njk" %}
 {% block content %}
-    {% for post in collections.post %}
+    {% for post in posts %}
     <article class="posts">
     <h1>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
@@ -8,7 +8,7 @@
     {% if post.data.image %}
     <div class="thumbnail-container">
         <a href="{{ post.url | url }}">
-            <amp-img src={{ post.data.image }} alt={{ post.data.title }} layout="responsive" width="400" height="180"></amp-img>
+            <img src={{ post.data.image }} alt={{ post.data.title }} layout="responsive" width="1000" height="420"></img>
         </a>
     </div>
     {% endif %}
@@ -21,6 +21,20 @@
     <main> 
         {{ content | safe }}
     </main> 
+
+    <div class="pagination">
+
+    {% if pagination.nextPageHref  %}
+        <a class="pagination-button pagination-active next" href="{{ pagination.nextPageHref }}">Older</a>
+    {% else %}
+        <span class="pagination-button">Older</span>
+    {% endif %}
+
+    {% if pagination.previousPageHref %}
+        <a class="pagination-button pagination-active" href="{{ pagination.previousPageHref }}">Newer</a>
+    {% else %}
+        <span class="pagination-button">Newer</span>
+    {% endif %}
+    </div>
+
 {% endblock %}
-
-

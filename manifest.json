@@ -1,0 +1,22 @@
+{
+    "short_name": "juliocastillo.dev",
+    "name": "juliocastillo.dev - YaDS",
+    "description": "Stuff about web development",
+    "icons": [
+      {
+        "src": "/assets/icons/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/icons/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "juliocastillo.dev/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6"
+  }
