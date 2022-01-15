@@ -12,6 +12,16 @@ date: 2019-11-20
 
 image: /assets/img/litelement.webp
 ---
+
+> 📣 **UPDATE!** 📣
+> _Now lit-html and LitElement are unified under [Lit](https://lit.dev/)._
+> _I'm writing new posts about **Lit**, meanwhile you can:_
+> * _read this post because the principles are the same_
+> * _upgrade your code with this [guide] (https://lit.dev/docs/releases/upgrade/)_
+> * _visit *Lit* site to know what's new_
+
+> _You can also use [lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)_
+
 Hello my friends! We've finally reached the main subject of this series: **LitElement**.
 
 # A new class to rule web components

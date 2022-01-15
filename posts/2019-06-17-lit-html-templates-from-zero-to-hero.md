@@ -13,6 +13,15 @@ date: 2019-06-17
 image: /assets/img/hero-lit-html.webp
 ---
 
+> 📣 **UPDATE!** 📣
+> _Now lit-html and LitElement are unified under [Lit](https://lit.dev/)._
+> _I'm writing new posts about **Lit**, meanwhile you can:_
+> * _read this post because the principles are the same_
+> * _upgrade your code with this [guide] (https://lit.dev/docs/releases/upgrade/)_
+> * _visit *Lit* site to know what's new_
+
+> _You can also use [lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)_
+
 After a very smooth introduction to `lit-html`, I will go hard and get my hands dirty. I will show you how to write templates so this will be a session full of code!
 
 > I know you are here because you want to learn `LitElement`, so you read this title and find out that we continue with `lit-html`. The reason why I've structured these sessions this way is because `lit-html` is the basis for `LitElement` and also because I want you to see the great potential and versatility of `lit-html` by itself, probably the perfect match for a small or medium project. I assure you that everything you learn about `lit-html` will be used in `LitElement`. Be patient, we will arrive soon.

@@ -13,6 +13,14 @@ date: 2020-03-07
 image: /assets/img/litelement-depth.webp
 ---
 
+> 📣 **UPDATE!** 📣
+> _Now lit-html and LitElement are unified under [Lit](https://lit.dev/)._
+> _I'm writing new posts about **Lit**, meanwhile you can:_
+> * _read this post because the principles are the same_
+> * _upgrade your code with this [guide] (https://lit.dev/docs/releases/upgrade/)_
+> * _visit *Lit* site to know what's new_
+
+> _You can also use [lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)_
 
 Although **lit-html** is very efficient rendering, it is better to render only when necessary. That is why **LitElement** differs the re-rendering of the UI by batching the property updates. In other words, re-rendering is done asynchronously to ensure efficiency and good performance. Let's see how the update process works.
 
@@ -110,15 +118,13 @@ set title(value) {
 
 With this last topic about the UI update lifecycle we complete the basics of **LitElement**. You already have the fundamental knowledge to continue your path in **lit-html** and **LitElement**.
 
-To go deeper in these libraries I highly recommend reading the official documentation. It's It is very clear, concise and very well organized. In addition, each topic is accompanied by a live example in [Stackblitz](https://stackblitz.com/).
+To go deeper in these libraries I highly recommend reading the official documentation. It's It is very clear, concise and very well organized. In addition, each topic is accompanied by a live example in [Stackblitz](https://lit.dev/playground/).
 
-* [lit-html project guide](https://lit-html.polymer-project.org/guide) 
-* [LitElement project guide](https://lit-element.polymer-project.org/guide) 
+* [Lit documentation](https://lit.dev/docs/) 
 
 I also suggest you read the source code of **lit-html** and **LitElement**. It is relatively short, well documented and with what you already know you will not find it difficult to understand. This way everything will be much clearer.
 
-* [lit-html source code](https://github.com/polymer/lit-html)
-* [LitElement source code](https://github.com/polymer/lit-element)
+* [Lit source code](https://github.com/lit/lit)
 
 Last but not least, two important contributions from the community: 
 

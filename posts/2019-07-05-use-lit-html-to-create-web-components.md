@@ -13,6 +13,15 @@ series: LitElement
 image: /assets/img/lit-html-web-components.webp
 ---
 
+> 📣 **UPDATE!** 📣
+> _Now lit-html and LitElement are unified under [Lit](https://lit.dev/)._
+> _I'm writing new posts about **Lit**, meanwhile you can:_
+> * _read this post because the principles are the same_
+> * _upgrade your code with this [guide] (https://lit.dev/docs/releases/upgrade/)_
+> * _visit *Lit* site to know what's new_
+
+> _You can also use [lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)_
+
 This post was going to be about directives in `lit-html`, which is the way we can extend the library but I didn't want to keep delaying the arrival to our central theme of the series that is `LitElement`. So I decided to leave the directives for later and enter the doors of `LitElement`. I'm going to show you how to create web components using `lit-html` and we'll see how we get to `LitElement` from there. Let's get started!
 
 # The idea

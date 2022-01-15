@@ -13,6 +13,15 @@ date: 2019-06-04
 image: /assets/img/gentle.webp
 ---
 
+> 📣 **UPDATE!** 📣
+> _Now lit-html and LitElement are unified under [Lit](https://lit.dev/)._
+> _I'm writing new posts about **Lit**, meanwhile you can:_
+> * _read this post because the principles are the same_
+> * _upgrade your code with this [guide] (https://lit.dev/docs/releases/upgrade/)_
+> * _visit *Lit* site to know what's new_
+
+> _You can also use [lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)_
+
 Hello! I start my blog with a series of `LitElement` entries. I'll start with the most basic concepts and then I'll go deeper into the details of the use of this library. As `LitElement` is based on `lit-html` the first step will be the study of `lit-html`. I hope you like it and find it useful.
 
 `lit-html` is an HTML templating library made by the Polymer team. This library stands out for being simple, very small, extremely efficient in terms of speed and use of resources, and all this is because it is based on web standards.
